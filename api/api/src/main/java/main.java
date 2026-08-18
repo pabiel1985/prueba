@@ -50,6 +50,10 @@ public static void main(String[] args) {
     nombre = entrada.nextLine();
     System.out.printf("Ingrese su Salario: ");
     salario = entrada.nextDouble();
+    if (edad < 18){
+        System.out.println("No tiene edad para trabaja");
+    }
+
 
 
 
