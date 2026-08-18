@@ -42,19 +42,20 @@ public static void main(String[] args) {
 
     int edad;
     String nombre;
-    double salario;
+    double salario = 0;
     System.out.print("Ingrese su edad: ");
     edad = entrada.nextInt();
-    entrada.nextLine();
-    System.out.printf("Ingrese su nombre: ");
-    nombre = entrada.nextLine();
-    System.out.printf("Ingrese su Salario: ");
-    salario = entrada.nextDouble();
-    if (edad < 18){
+    if (edad < 18) {
         System.out.println("No tiene edad para trabaja");
+    } else {
+        entrada.nextLine();
+        System.out.printf("Ingrese su nombre: ");
+        nombre = entrada.nextLine();
+        System.out.printf("Ingrese su Salario: ");
+        salario = entrada.nextDouble();
+        if (edad >= 18 && edad < 50) {
+            salario = salario * 1.05;
+        }
     }
-
-
-
-
+      System.out.printf("%.2f", salario);
 }
