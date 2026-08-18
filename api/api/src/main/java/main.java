@@ -57,5 +57,6 @@ public static void main(String[] args) {
             salario = salario * 1.05;
         }
     }
+    
       System.out.printf("%.2f", salario);
 }
